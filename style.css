@@ -5,6 +5,7 @@ body,
 header,
 .view {
   height: 95%;
+
 }
 
 @media (max-width: 740px) {
@@ -12,7 +13,7 @@ header,
   body,
   header,
   .view {
-    height: 400px;
+    height: 150px;
   }
 }
 @media (min-width: 800px) and (max-width: 850px) {
@@ -20,7 +21,7 @@ header,
   body,
   header,
   .view {
-    height: 500px;
+    height: 600px;
   }
 }
 
