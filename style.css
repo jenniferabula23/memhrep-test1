@@ -5,6 +5,9 @@ body,
 header,
 .view {
   height: 95%;
+  font-weight: bold;
+  color: black;
+ 
 
 }
 
