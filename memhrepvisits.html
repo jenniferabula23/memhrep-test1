@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#33b5e5">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/compiled-4.20.0.min.css">
+
+    <meta charset="utf-8">
+
+    <link rel="shortcut icon" href="img/FB_IMG_15999141529387218.jpg" />
+
+    <link rel="canonical" href="https://mdbootstrap.com/docs/b4/jquery/components/demo/" />
+  <style>
+    html,
+body,
+header,
+.view {
+  height: 65%;
+
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 250px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 600px;
+  }
+}
+
+.btn .fa {
+  margin-left: 3px;
+}
+
+.top-nav-collapse {
+   background: -moz-linear-gradient(45deg, rgba(4, 2, 17, 0.7), rgba(223, 131, 27, 0.7) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(236, 112, 10, 0.7), rgba(177, 102, 5, 0.7) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(177, 89, 7, 0.7)), to(rgba(212, 133, 14, 0.7)));
+  background: -o-linear-gradient(45deg, rgba(235, 234, 238, 0.7), rgba(107, 62, 10, 0.7) 100%);
+  background: linear-gradient(to 45deg, rgba(254, 255, 255, 0.7), rgba(180, 111, 8, 0.7) 100%);
+
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+ .navbar:not(.top-nav-collapse) {
+  background: #e47712 !important;
+ }
+}
+
+.btn-white {
+  color: black !important;
+}
+
+
+
+.rgba-gradient {
+    background: -moz-linear-gradient(45deg, rgba(4, 2, 17, 0.7), rgba(168, 117, 6, 0.7) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(199, 139, 11, 0.7) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(243, 239, 235, 0.7)), to(rgba(100, 70, 6, 0.7)));
+  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(151, 119, 13, 0.7) 100%);
+  background: linear-gradient(to 45deg, rgba(231, 152, 34, 0.7), rgba(46, 32, 1, 0.7) 100%);
+}
+
+.rgba-gradient1{
+  background: -moz-linear-gradient(45deg, rgba(4, 2, 17, 0.7), rgba(168, 117, 6, 0.7) 100%);
+background: -webkit-linear-gradient(45deg, rgba(2, 1, 0, 0.7), rgba(14, 13, 13, 0.7) 100%);
+background: -webkit-gradient(linear, 45deg, from(rgba(8, 5, 2, 0.7)), to(rgba(3, 3, 3, 0.7)));
+background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(0, 0, 0, 0.7) 100%);
+background: linear-gradient(to 45deg, rgba(12, 12, 12, 0.7), rgba(2, 2, 1, 0.7) 100%);
+}
+  </style>
+
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><b>Memhrep</b>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features" data-offset="90">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services" data-offset="90">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html" data-offset="30">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team" data-offset="90">Donations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-offset="90">Countries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html" data-offset="90">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Icon  -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="fab fa-facebook-f light-green-text-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="fab fa-twitter light-green-text-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="fab fa-instagram light-green-text-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+        </nav>
+        <div class="view"
+            style="background-image: url('img/WhatsApp\ Image\ 2020-04-12\ at\ 12.18.01\ \(12\).jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+                <!-- Content -->
+                <div class="container">
+                    <br>
+                    <!--Grid row-->
+
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+        </div>
+        <!-- Full Page Intro -->
+    </header>
+    <!-- Main navigation -->
+</head>
+
+<body>
+
+    <div class="container my-5 py-5 z-depth-1">
+
+
+        <!--Section: Content-->
+        <section class="text-center px-md-5 mx-md-5 dark-grey-text">
+
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+
+                <!--Grid column-->
+                <div class="col-lg-12">
+
+                    <p>
+                        Staff and volunteers of MEMHREP Ghana, on 23rd November 2022 paid a visit to the psychiatric
+                        unit of Ejisu Government Hospital in the Ashanti region on Ghana.
+                        Speaking to staffof MEMHREP, the nurse in charge of the department Ms Esther Glago commended the
+                        initiative of the NGO in educating, supporting and caring for the needs of people living with
+                        mental illness in Ghana.
+                        She therefore urged other NGOs to emulate the examples of MEMHREP in it’s efforts at getting
+                        persons living with mental illness of the streets.
+                        She also highlighted poverty,starvation and stigmatization as factors affecting the quality of
+                        mental health delivery in the district.
+                        The CEO of MEMHREP, Mr Adu-Gyamfi called on the NHIS to as a matter of urgency subside drugs
+                        used in treating people living with mental illness in Ghana.
+                    </p>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small brown darken-3">
+
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2022 Copyright:
+            <a href="#">Memhrep</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+    <script type="text/javascript"
+        src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/bundles/4.20.0/compiled.min.js"></script>
+
+
+    <script type="text/javascript"
+        src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/search-v4/search.min.js"></script>
+    <script src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/main.min.js"></script>
+
+</body>
+
+</html>
