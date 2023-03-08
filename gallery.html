@@ -1,353 +1,264 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>joy aid Foundation</title>
-    <!-- MDB icon -->
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <!-- Google Fonts Roboto -->
+    <meta name="theme-color" content="#33b5e5">
+
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="css/mdb.min.css">
-    <!-- Your custom styles (optional) -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/compiled-4.20.0.min.css">
 
+    <meta charset="utf-8">
 
+    <link rel="shortcut icon" href="img/FB_IMG_15999141529387218.jpg" />
 
+    <link rel="canonical" href="https://mdbootstrap.com/docs/b4/jquery/components/demo/" />
     <style>
-        .navbar:not(.top-nav-collapse) {
-            background-color: #584903;
-        }
+        html,
+    body,
+    header,
+    .view {
+      height: 70%;
+    
+    }
+    
+    @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 250px;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 600px;
+      }
+    }
+    
+    .btn .fa {
+      margin-left: 3px;
+    }
+    
+    .top-nav-collapse {
+       background: -moz-linear-gradient(45deg, rgba(4, 2, 17, 0.7), rgba(223, 131, 27, 0.7) 100%);
+      background: -webkit-linear-gradient(45deg, rgba(236, 112, 10, 0.7), rgba(177, 102, 5, 0.7) 100%);
+      background: -webkit-gradient(linear, 45deg, from(rgba(177, 89, 7, 0.7)), to(rgba(212, 133, 14, 0.7)));
+      background: -o-linear-gradient(45deg, rgba(235, 234, 238, 0.7), rgba(107, 62, 10, 0.7) 100%);
+      background: linear-gradient(to 45deg, rgba(254, 255, 255, 0.7), rgba(180, 111, 8, 0.7) 100%);
+    
+    }
+    
+    .navbar:not(.top-nav-collapse) {
+      background: transparent !important;
+    }
+    
+    @media (max-width: 991px) {
+     .navbar:not(.top-nav-collapse) {
+      background: #e47712 !important;
+     }
+    }
+    
+    .btn-white {
+      color: black !important;
+    }
+    
+    
+    
+    .rgba-gradient {
+        background: -moz-linear-gradient(45deg, rgba(4, 2, 17, 0.7), rgba(168, 117, 6, 0.7) 100%);
+      background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(199, 139, 11, 0.7) 100%);
+      background: -webkit-gradient(linear, 45deg, from(rgba(243, 239, 235, 0.7)), to(rgba(100, 70, 6, 0.7)));
+      background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(151, 119, 13, 0.7) 100%);
+      background: linear-gradient(to 45deg, rgba(231, 152, 34, 0.7), rgba(46, 32, 1, 0.7) 100%);
+    }
+    
+    .rgba-gradient1{
+      background: -moz-linear-gradient(45deg, rgba(4, 2, 17, 0.7), rgba(168, 117, 6, 0.7) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(2, 1, 0, 0.7), rgba(14, 13, 13, 0.7) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(8, 5, 2, 0.7)), to(rgba(3, 3, 3, 0.7)));
+    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(0, 0, 0, 0.7) 100%);
+    background: linear-gradient(to 45deg, rgba(12, 12, 12, 0.7), rgba(2, 2, 1, 0.7) 100%);
+    }
+      </style>
+ <!--Navbar-->
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Memhrep</a>
 
-        .top-nav-collapse {
-            background-color: #7c5204;
-        }
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        @media (max-width: 768px) {
-            .navbar:not(.top-nav-collapse) {
-                background-color: #945b04;
-            }
-        }
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
-        @media (min-width: 800px) and (max-width: 850px) {
-            .navbar:not(.top-nav-collapse) {
-                background-color: #8a5108;
-            }
-        }
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" data-offset="90">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="news.html" data-offset="90">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="achievement.html" data-offset="90">Achievement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="testimonials.html" data-offset="90">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html" data-offset="30">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team" data-offset="90">Donations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" data-offset="90">Countries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" data-offset="90"> Mental Health</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html" data-offset="90">Contact Us</a>
+        </li>
 
-        .border-top {
-            border-top-width: 2px !important;
-        }
+      </ul>
 
+      <!-- Social Icon  -->
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fab fa-facebook-f light-green-text-2"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fab fa-twitter light-green-text-2"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fab fa-instagram light-green-text-2"></i>
+          </a>
+        </li>
+      </ul>
 
-
-        .gallery {
-            -webkit-column-count: 3;
-            -moz-column-count: 3;
-            column-count: 3;
-            -webkit-column-width: 33%;
-            -moz-column-width: 33%;
-            column-width: 33%;
-        }
-
-        .gallery .pics {
-            -webkit-transition: all 350ms ease;
-            transition: all 350ms ease;
-        }
-
-        .gallery .animation {
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-            transform: scale(1);
-        }
-
-        @media (max-width: 450px) {
-            .gallery {
-                -webkit-column-count: 1;
-                -moz-column-count: 1;
-                column-count: 1;
-                -webkit-column-width: 100%;
-                -moz-column-width: 100%;
-                column-width: 100%;
-            }
-        }
-
-        @media (max-width: 400px) {
-            .btn.filter {
-                padding-left: 1.1rem;
-                padding-right: 1.1rem;
-                font-size: 3px;
-            }
-        }
-    </style>
-
+    </div>
+</nav>
 </head>
 
-
-
-
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+  <br>
+  <br>
+  <br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+  
+      <div id="mdb-lightbox-ui"></div>
+  
+      <div class="mdb-lightbox">
+  
+       <div class="row">
+        <figure class="col-md-4">
+          <a href="#" data-size="1600x1067">
+            <img alt="picture" src="img/IMG-20201013-WA0008.jpg" class="img-fluid">
+          </a>
+        </figure>
+  
+        <figure class="col-md-4">
+          <a href="#" data-size="1600x1067">
+            <img alt="picture" src="img/IMG_1212.JPG" class="img-fluid" />
+          </a>
+        </figure>
+  
+        <figure class="col-md-4">
+          <a href="#" data-size="1600x1067">
+            <img alt="picture" src="img/IMG-20201013-WA0010.jpg" class="img-fluid" />
+          </a>
+        </figure>
+  
+       </div>
+       <div class="row">
+        <figure class="col-md-4">
+          <a href="#" data-size="1600x1067">
+            <img alt="picture" src="img/IMG_1204.JPG" class="img-fluid" />
+          </a>
+        </figure>
+  
+        <figure class="col-md-4">
+          <a href="#" data-size="1600x1067">
+            <img alt="picture" src="img/IMG_1212.JPG" class="img-fluid" />
+          </a>
+        </figure>
+  
+        <figure class="col-md-4">
+          <a href="" data-size="1600x1067">
+            <img alt="picture" src="img/IMG-20201013-WA0012.jpg" class="img-fluid" />
+          </a>
+        </figure>
+       </div>
+  
+       <div class="row">
+        <figure class="col-md-4">
+          <a href="#" data-size="1600x1067">
+            <img alt="picture" src="img/IMG_1210.JPG" class="img-fluid" />
+          </a>
+        </figure>
+  
+        <figure class="col-md-4">
+          <a href="#" data-size="1600x1067">
+            <img alt="picture" src="img/IMG-20201013-WA0016.jpg" class="img-fluid" />
+          </a>
+        </figure>
+  
+        <figure class="col-md-4">
+          <a href="#" data-size="1600x1067">
+            <img alt="picture" src="img/IMG-20201013-WA0015.jpg" class="img-fluid" />
+          </a>
+        </figure>
+       </div>
+  
+      </div>
+  
+    </div>
+  </div>
+</div>
 
-        <div class="container">
-            <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="basicExampleNav">
 
-                <!-- Links -->
-                <ul class="navbar-nav mr-auto smooth-scroll">
-                    <li class="nav-item smooth-scroll list-unstyled">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                </ul>
-                <!-- Links -->
+    <!-- Footer -->
+    <footer class="page-footer font-small brown darken-3">
 
-                <ul class="navbar-nav">
-                    <li class="nav-item pl-2 mb-2 mb-md-0 d-md-none d-xl-inline-block">
-                        <a href="blog.html" type="button"
-                            class="btn btn-outline-warning btn-md btn-rounded btn-navbar waves-effect waves-light">Blog</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Collapsible content -->
 
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2022 Copyright:
+            <a href="#">Memhrep</a>
         </div>
+        <!-- Copyright -->
 
-    </nav>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div class="container">
-        <h2 class="text-center mx-auto font-weight-bold mb-5 pb-2">Our Gallery</h2>
-        <!-- Grid row -->
-        <!-- Grid row -->
-        <div class="row">
-            <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
-
-        <!-- Grid row -->
-        <div class=" container gallery" id="gallery">
+    </footer>
+    <!-- Footer -->
 
 
 
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 2">
-                <img class="img-fluid" src="img/IMG-20201013-WA0006.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
+    <script type="text/javascript"
+        src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/bundles/4.20.0/compiled.min.js"></script>
 
 
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/IMG-20201013-WA0007.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 2">
-                <img class="img-fluid" src="img/IMG-20201013-WA0009.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/IMG-20201013-WA0011.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/IMG-20201013-WA0012.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/WhatsApp Image 2020-04-12 at 12.18.01 (9).jpeg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/WhatsApp Image 2020-04-12 at 12.18.01 (7).jpeg" alt="Card image cap">
-            </div>
-
-            <!-- Grid column -->
-
-            <div class="mb-3 pics animation all 2">
-                <img class="img-fluid" src="img/WhatsApp Image 2020-04-12 at 12.18.01 (5).jpeg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 2">
-                <img class="img-fluid" src="img/WhatsApp Image 2020-04-12 at 12.18.01 (10).jpeg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <br>
-
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 2">
-                <img class="img-fluid" src="img/WhatsApp Image 2020-04-12 at 12.18.01 (12).jpeg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/WhatsApp Image 2020-04-12 at 12.18.01 (26).jpeg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 2">
-                <img class="img-fluid" src="img/IMG-20201013-WA0020.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/IMG-20201013-WA0014.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/IMG_1210.JPG" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/IMG_1208.JPG" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/IMG-20201013-WA0018.jpg" alt="Card image cap">
-            </div>
-
-            <!-- Grid column -->
-
-            <div class="mb-3 pics animation all 2">
-                <img class="img-fluid" src="img/IMG_1210.JPG" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 2">
-                <img class="img-fluid" src="img/IMG-20201013-WA0015.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-           
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 2">
-                <img class="img-fluid" src="img/IMG_1211.JPG" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-
-            <div class="mb-3 pics animation all 3">
-                <img class="img-fluid" src="img/WhatsApp Image 2020-04-12 at 12.18.01 (27).jpeg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 3">
-                <img class="img-fluid" src="img/WhatsApp Image 2020-04-12 at 12.18.01 (24).jpeg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 3">
-                <img class="img-fluid" src="img/IMG-20201013-WA0020.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 3">
-                <img class="img-fluid" src="img/IMG_1213.JPG" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 4">
-                <img class="img-fluid" src="img/WhatsApp Image 2020-04-12 at 12.18.01 (5).jpeg" alt="Card image cap">
-            </div>
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 4">
-                <img class="img-fluid" src="img/IMG-20201013-WA0021.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 4">
-                <img class="img-fluid" src="img/IMG_1202.JPG" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/WhatsApp Image 2020-04-12 at 12.18.01 (1).jpeg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-        </div>
-
-
-
-
-
-
-
-
-        <!-- jQuery -->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="js/popper.min.js"></script>
-        <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="js/mdb.min.js"></script>
-        <!-- Your custom scripts (optional) -->
-        <script type="text/javascript">
-            $(function () {
-                var selectedClass = "";
-                $(".filter").click(function () {
-                    selectedClass = $(this).attr("data-rel");
-                    $("#gallery").fadeTo(100, 0.1);
-                    $("#gallery div").not("." + selectedClass).fadeOut().removeClass('animation');
-                    setTimeout(function () {
-                        $("." + selectedClass).fadeIn().addClass('animation');
-                        $("#gallery").fadeTo(300, 1);
-                    }, 300);
-                });
-            });
-
-            // MDB Lightbox Init
-            $(function () {
-                $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-            });
-
-        </script>
+    <script type="text/javascript"
+        src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/search-v4/search.min.js"></script>
+    <script src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/main.min.js"></script>
 
 </body>
 
